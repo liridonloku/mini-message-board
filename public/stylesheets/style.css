@@ -1,8 +1,10 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  min-height: 100vh;
 }
 
 a {
-  color: #00b7ff;
+}
+
+ul {
+  list-style-type: none;
 }

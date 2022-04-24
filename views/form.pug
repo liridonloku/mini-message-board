@@ -1,9 +1,10 @@
 extends layout 
 
 block content 
-  a(href="../") Go back 
-  form(method='POST' action="/new")
-    h1 #{title} 
-    input(type="text" name="author" placeholder="Author")
-    input(type="text" name="message" placeholder="Message") 
-    button(type="submit") Submit
+  div(class="container p-3")
+    a(href="../" class="btn btn-secondary") Go back 
+    form(method='POST' action="/new" class="d-flex flex-column justify-content-center gap-3")
+      h1(class='text-center') #{title} 
+      input(type="text" name="author" placeholder="Author")
+      textarea(name="message" placeholder="Message") 
+      button(type="submit" class="btn btn-primary") Submit

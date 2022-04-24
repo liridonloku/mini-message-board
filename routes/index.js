@@ -29,7 +29,7 @@ router.post("/new", function (req, res, next) {
   const text = req.body.message;
   const added = new Date();
   const message = { user, text, added };
-  messages.push(message);
+  messages.unshift(message);
   res.redirect("/");
 });
 
