@@ -1,6 +1,7 @@
 extends layout 
 
 block content 
+  a(href="../") Go back 
   form(method='POST' action="/new")
     h1 #{title} 
     input(type="text" name="author" placeholder="Author")
